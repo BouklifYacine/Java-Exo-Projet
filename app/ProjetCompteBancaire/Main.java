@@ -9,7 +9,7 @@ public class Main {
         Banque banque = new Banque();
 
         compte1.DeposerArgent(10);
-        compte1.RetirerArgent(5);
+        compte1.RetirerArgent(40);
         compte1.AfficherSolde();
         banque.AjouterCompteBancaire(compte1);
         banque.AjouterCompteBancaire(compte2);

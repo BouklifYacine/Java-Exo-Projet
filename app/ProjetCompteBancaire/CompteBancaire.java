@@ -25,8 +25,8 @@ public class CompteBancaire {
     }
 
     public void RetirerArgent(double montant){
-        if(montant < 0){
-            System.out.println("Vous n'avez plus de sous dans votre compte");
+        if(montant > this.solde){
+            System.out.println("Vous n'avez pas ces fonds nécessaire dans le compte ");
         }
         else {
             solde -= montant;

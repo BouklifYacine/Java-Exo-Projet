@@ -27,8 +27,13 @@ public class Banque {
         }
     }
 
-    public void RetirerCompteBancaire(CompteBancaire compte){
-        Totalcomptes.remove(compte); 
-        System.out.println("Le compte retiré est : " + compte.getNomTitulaireCompte());
-    }
-}
+    public void RetirerCompteBancaire(CompteBancaire compte) {
+    
+        boolean compteRetiré = Totalcomptes.remove(compte);
+    
+        if (compteRetiré) {
+            System.out.println("Le compte retiré est : " + compte.getNomTitulaireCompte());
+        } else {
+            System.out.println("Erreur : Le compte n'a pas été trouvé.");
+        }
+    }}
