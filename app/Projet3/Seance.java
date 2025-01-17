@@ -1,37 +1,39 @@
 package app.Projet3;
 
+
 public class Seance {
 
-    private Film film;
-    private String heure;
-    private int placesDisponibles;
+   private Film film; 
+   private double heure;
+   private int placesdisponibles; 
 
-
-    public Seance(Film film, String heure, int placesDisponibles) {
-        this.film = film;
-        this.heure = heure;
-        this.placesDisponibles = placesDisponibles;
+    public Seance(Film film, double heure, int placesdisponibles){
+        this.film = film; 
+        this.heure = heure; 
+        this.placesdisponibles = placesdisponibles;
     }
 
-    public Film getFilm() {
+    public Film getFilm(){
         return film;
     }
 
-    public String getHeure() {
+    public double getHeure(){
         return heure;
     }
 
-    public int getPlacesDisponibles() {
-        return placesDisponibles;
+    public int placesdisponibles(){
+        return placesdisponibles;
     }
 
-   
-    public void reserver(int nombreDePlaces) {
-        if (nombreDePlaces <= placesDisponibles) {
-            placesDisponibles -= nombreDePlaces;
-            System.out.println(nombreDePlaces + " places réservées pour " + film.getTitre() + " à " + heure);
-        } else {
-            System.out.println("Pas assez de places disponibles pour " + film.getTitre() + " à " + heure);
+    public void reserver(int nombreplace){
+        if (nombreplace <= placesdisponibles){
+            placesdisponibles -= nombreplace; 
+            System.out.println(nombreplace + " places réservées pour " + film.getTitre() + " a " + heure);
+        }
+        else{
+            System.out.println(" Pas assez de places disponibles pour " + film.getTitre() + " a " + heure);
         }
     }
+
+  
 }
