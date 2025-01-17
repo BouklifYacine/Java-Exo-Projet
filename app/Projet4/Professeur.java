@@ -1,14 +1,25 @@
 package app.Projet4;
 
-public class Professeur extends Personne {
-   private String specialite; 
+import java.util.ArrayList;
 
-    public Professeur(String nom, int age, int id , String specialite){
-        super(nom,id,age);
+public class Professeur extends Personne {
+    private String specialite;
+    ArrayList<Cours> ListeCours;
+
+    public Professeur(String nom, int age, int id, String specialite) {
+        super(nom, id, age);
         this.specialite = specialite;
+        this.ListeCours = new ArrayList<>();
     }
 
-    public String getSpecialite(){
+    public void AfficherCoursEnseignés() {
+        System.out.println(" Monsieur Bg enseigne ces matières : ");
+        for (Cours cours : ListeCours) {
+            System.out.println(cours.getNom());
+        }
+    }
+
+    public String getSpecialite() {
         return specialite;
     }
 }
