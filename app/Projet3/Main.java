@@ -5,7 +5,7 @@ public class Main {
     
         Film film1 = new Film("Inception", "Christopher Nolan", 148);
 
-        Seance seance1 = new Seance(film1, "18:00", 10);
+        Seance seance1 = new Seance(film1, 18, 100);
 
         Utilisateur utilisateur1 = new Utilisateur("Alice");
 
@@ -13,6 +13,6 @@ public class Main {
 
         utilisateur1.afficherBillets();
 
-        System.out.println("Places disponibles pour " + seance1.getFilm().getTitre() + " : " + seance1.getPlacesDisponibles());
+        System.out.println("Places disponibles pour " + seance1.getFilm().getTitre() + " : " + seance1.placesdisponibles()  );
     }
 }

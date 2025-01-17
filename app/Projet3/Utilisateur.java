@@ -20,7 +20,7 @@ public class Utilisateur {
     public void afficherBillets() {
         System.out.println("Billets réservés par " + nom + ":");
         for (Seance seance : listebillets) {
-            System.out.println("- " + seance.getFilm().getTitre() + " à " + seance.getHeure());
+            System.out.println("- " + seance.getFilm().getTitre() + " à " + seance.getHeure() + " heures");
         }
     }
 

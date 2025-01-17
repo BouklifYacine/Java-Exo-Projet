@@ -1,6 +1,5 @@
 package app.Projet3;
 
-
 public class Seance {
 
    private Film film; 
