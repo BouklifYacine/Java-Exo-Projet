@@ -1,26 +1,25 @@
 package app.Projet3;
-
 public class Film {
+
     private String titre;
     private String realisateur;
     private double duree; 
-
-    public Film(String titre , String realisateur, double duree){
+  
+    public Film(String titre, String realisateur, double duree) {
         this.titre = titre;
-        this.realisateur = realisateur; 
+        this.realisateur = realisateur;
         this.duree = duree;
     }
-
-    public String getFilm(){
+    
+    public String getTitre() {
         return titre;
-    }; 
+    }
 
-    public String getRealisateur(){
+    public String getRealisateur() {
         return realisateur;
-    }; 
+    }
 
-    public double getDuree(){
+    public double getDuree() {
         return duree;
-    }; 
-
+    }
 }

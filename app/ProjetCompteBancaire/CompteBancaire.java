@@ -21,8 +21,7 @@ public class CompteBancaire {
         else {
             System.out.println("Erreur : vous n'avez pas d'argent ");
         }
-  
-    }
+   }
 
     public void RetirerArgent(double montant){
         if(montant > this.solde){
