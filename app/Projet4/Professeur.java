@@ -13,7 +13,7 @@ public class Professeur extends Personne {
     }
 
     public void AfficherCoursEnseignés() {
-        System.out.println(" Monsieur Bg enseigne ces matières : ");
+        System.out.println("Monsieur " + getNom() + " enseigne ces matières : ");
         for (Cours cours : ListeCours) {
             System.out.println(cours.getNom());
         }
