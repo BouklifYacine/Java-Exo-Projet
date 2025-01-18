@@ -12,17 +12,6 @@ public class Professeur extends Personne {
         this.Listecours = new ArrayList<>();
     }
 
-    public void AfficherCoursEnseignes() {
-        if (Listecours.isEmpty()) {
-            System.out.println("Il n'y a aucun cours enseigné actuellement. ");
-        } else {
-            System.out.println("Les cours enseigner sont : ");
-            for (Cours coursenseigne : Listecours) {
-                System.out.println(" - " + coursenseigne.getNomcours());
-            }
-        }
-    }
-
     public void AjouterCours(Cours cours) {
         if (!Listecours.contains(cours)) {
             Listecours.add(cours);
@@ -32,6 +21,19 @@ public class Professeur extends Personne {
         }
 
     }
+
+
+    public void AfficherCoursEnseignes() {
+        if (Listecours.isEmpty()) {
+            System.out.println("Il n'y a aucun cours enseigné actuellement. " );
+        } else {
+            System.out.println("Les cours enseigner sont : ");
+            for (Cours coursenseigne : Listecours) {
+                System.out.println(" - " + coursenseigne.getNomcours());
+            }
+        }
+    }
+
 
     public String getSpecialite() {
         return specialite;

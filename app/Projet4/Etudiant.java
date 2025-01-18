@@ -4,9 +4,9 @@ public class Etudiant extends Personne {
     private String niveau;
 
     public Etudiant(String niveau, String nom, int age, int id){
-
-        this.niveau = niveau;
         super(nom,age,id);
+        this.niveau = niveau;
+     
     }
 
     public String getNiveau(){
