@@ -2,18 +2,16 @@ package app.Projet4;
 
 public class Main {
     public static void main(String[] args) {
+        Professeur professeur = new Professeur("Maths", "Gerard", 1, 35);
+        Cours cours = new Cours("Algèbre", professeur);
 
-        // Etudiant etudiant1 = new Etudiant("Yacine", 25, 1, "Licence");
+        Etudiant etudiant1 = new Etudiant("Moyen", "Yacine", 1, 25);
+        Etudiant etudiant2 = new Etudiant("Excellent", "Salah", 2, 35);
 
-        // Professeur professeur1 = new Professeur("Gérard", 50, 2, "Maths");
+        cours.StockerEtudiant(etudiant1);
+        cours.StockerEtudiant(etudiant2);
 
-        // Cours cours1 = new Cours("Geo", professeur1);
-        // Cours cours2 = new Cours("Algèbre", professeur1);
-
-        // cours1.inscrireEtudiant(etudiant1);
-
-        // cours1.AfficherEtudiantInscrit();
-
-        // professeur1.AfficherCoursEnseignés();
+        cours.AfficherEtudiants();
+       
     }
 }
