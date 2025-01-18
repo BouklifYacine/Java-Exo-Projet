@@ -8,12 +8,12 @@ public class Lion extends Animal {
 
     @Override
     public void manger(){
-        System.out.println(" Le " + this.getNom() + " mange un zèbre ");
+        System.out.println(this.getNom() + " mange un zèbre ");
     }
 
     @Override
     public void dormir(){
-        System.out.println(" Le " + this.getNom() + " dort avec sa famille  ");
+        System.out.println( this.getNom() + " dort avec sa famille  ");
     }
 }
 

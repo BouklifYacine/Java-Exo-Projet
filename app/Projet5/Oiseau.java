@@ -8,12 +8,12 @@ public class Oiseau extends Animal {
 
     @Override
     public void manger(){
-        System.out.println(" Le " + this.getNom() + " mange un poisson ");
+        System.out.println( this.getNom() + " mange un poisson ");
     }
 
     @Override
     public void dormir(){
-        System.out.println(" Le " + this.getNom() + " dort tout seul  ");
+        System.out.println( this.getNom() + " dort tout seul  ");
     }
     
 }

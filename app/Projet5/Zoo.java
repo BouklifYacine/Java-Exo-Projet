@@ -25,7 +25,7 @@ public class Zoo {
         } else {
             System.out.println(" Les animaux présents dans le zoo sont : ");
             for (Animal animal : ListeAnimal) {
-                System.out.println(" - " + animal.getNom() + animal.getEspece());
+                System.out.println(" Nom :  " + animal.getNom() + " - " + " Espece : " + animal.getEspece());
             }
         }
     }

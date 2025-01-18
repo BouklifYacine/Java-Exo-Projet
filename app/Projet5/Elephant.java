@@ -8,12 +8,12 @@ public class Elephant extends Animal {
 
     @Override
     public void manger(){
-        System.out.println(" Le " + this.getNom() + " mange un guépard ");
+        System.out.println( this.getNom() + " mange un guépard ");
     }
 
     @Override
     public void dormir(){
-        System.out.println(" Le " + this.getNom() + " dort avec sa femme éléphante  ");
+        System.out.println(this.getNom() + " dort avec sa femme éléphante  ");
     }
     
 }
