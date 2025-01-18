@@ -23,6 +23,6 @@ public abstract class  Animal {
         return espece;
     }
 
-    public abstract void Manger(); 
-    public abstract void Dormir(); 
+    public abstract void manger(); 
+    public abstract void dormir(); 
 }

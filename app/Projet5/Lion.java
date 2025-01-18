@@ -2,17 +2,17 @@ package app.Projet5;
 
 public class Lion extends Animal {
     
-    public Lion(String nom, int age, String espece){
-        super(nom,age,espece);
+    public Lion(String nom, int age){
+        super(nom,age,"Lion");
     }
 
     @Override
-    public void Manger(){
+    public void manger(){
         System.out.println(" Le " + this.getNom() + " mange un zèbre ");
     }
 
     @Override
-    public void Dormir(){
+    public void dormir(){
         System.out.println(" Le " + this.getNom() + " dort avec sa famille  ");
     }
 }
