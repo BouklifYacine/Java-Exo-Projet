@@ -8,34 +8,32 @@ public class Client {
     private ArrayList<Commande> historiquedeCommandes;
 
     public Client(String nom, String email) {
-
         this.nom = nom;
         this.email = email;
         this.historiquedeCommandes = new ArrayList<>();
-
     }
 
     public void ajouterCommande(Commande commande) {
         if (historiquedeCommandes.contains(commande)) {
-            System.out.println("Cette " + commande + " est déja dans la liste");
+            System.out.println("Cette commande est déjà dans la liste.");
         } else {
             historiquedeCommandes.add(commande);
-            System.out.println("Tu viens d'ajouter a ta commande : " + commande);
+            System.out.println("Tu viens d'ajouter une commande : " + commande);
         }
     }
 
-    public void AfficherLesCommandes(Commande commande1) {
+    public void afficherLesCommandes() {
         if (historiquedeCommandes.isEmpty()) {
-            System.out.println("Votre commande est vide ajouter un produit pour voir vos commandes");
+            System.out.println("Votre historique de commandes est vide. Ajoutez une commande pour voir vos achats.");
         } else {
-            System.out.println(" Voici ce que contient votre commande : ");
+            System.out.println("Voici ce que contient votre historique de commandes : ");
             for (Commande commande : historiquedeCommandes) {
                 System.out.println("- " + commande);
             }
         }
     }
 
-    public String getNomClient() {
+    public String getNom() {
         return this.nom;
     }
 
