@@ -42,22 +42,4 @@ public class Commande {
         return this.client;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Commande commande = (Commande) obj;
-        return Double.compare(commande.total, total) == 0 &&
-               client.equals(commande.client) &&
-               listeProduits.equals(commande.listeProduits);
-    }
-
-    @Override
-    public String toString() {
-        return "Commande{" +
-                "total=" + total +
-                ", client=" + client.getNom() +
-                ", listeProduits=" + listeProduits +
-                '}';
-    }
 }
