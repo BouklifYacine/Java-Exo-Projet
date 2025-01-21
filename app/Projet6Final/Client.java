@@ -24,7 +24,7 @@ public class Client {
         }
     }
 
-    public void AfficherLesCommandes() {
+    public void AfficherLesCommandes(Commande commande1) {
         if (historiquedeCommandes.isEmpty()) {
             System.out.println("Votre commande est vide ajouter un produit pour voir vos commandes");
         } else {
