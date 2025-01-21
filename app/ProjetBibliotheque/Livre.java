@@ -1,4 +1,4 @@
-package app;
+package app.ProjetBibliotheque;
 
 public class Livre {
     private String titre;
